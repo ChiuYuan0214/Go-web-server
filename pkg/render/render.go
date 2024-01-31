@@ -129,7 +129,6 @@ func CreateTemplateCacheV2() (map[string]*template.Template, error) {
 
 		myCache[name] = ts
 	}
-	log.Println("templates created")
 
 	return myCache, nil
 }

@@ -4,7 +4,6 @@ import (
 	"hello-world-app/pkg/config"
 	"hello-world-app/pkg/models"
 	"hello-world-app/pkg/render"
-	"log"
 	"net/http"
 )
 
@@ -32,7 +31,6 @@ func (m *Repository) Home(w http.ResponseWriter, r *http.Request) {
 	// 	fmt.Println(err)
 	// }
 	// fmt.Printf("bytes written: %s", strconv.Itoa(n))
-	log.Println(r)
 	render.RenderTemplateV3(w, "home.page.tmpl", &models.TemplateData{})
 }
 
